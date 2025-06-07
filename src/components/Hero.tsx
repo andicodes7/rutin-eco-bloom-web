@@ -44,15 +44,12 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                  <div className="w-16 h-16 bg-primary rounded-full"></div>
-                </div>
-                <p className="text-lg font-medium text-foreground">
-                  Natural • Safe • Sustainable
-                </p>
-              </div>
+            <div className="relative overflow-hidden rounded-3xl">
+              <img 
+                src="/lovable-uploads/9d4d7926-666d-4299-9493-df2a17047020.png" 
+                alt="Rutin biodegradable sanitary pads packaging - Strong Women, Clean Planet"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
