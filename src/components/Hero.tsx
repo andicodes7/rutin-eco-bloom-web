@@ -7,6 +7,16 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
+            <div className="flex items-center gap-4 mb-6">
+              <img 
+                src="/lovable-uploads/0d7c6075-0494-44b7-8169-58674da613c4.png" 
+                alt="Rutin R Logo"
+                className="w-16 h-16 object-contain"
+              />
+              <div className="h-12 w-px bg-primary/30"></div>
+              <span className="text-lg font-medium text-primary">Rutin</span>
+            </div>
+            
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Redefining
