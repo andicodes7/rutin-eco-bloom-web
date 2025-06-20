@@ -11,7 +11,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">Rutin</h1>
+            <img 
+              src="/lovable-uploads/8c476577-501e-401e-93b2-b1f9856ee3ef.png" 
+              alt="Rutin - Confidence starts with comfort"
+              className="h-10 w-auto object-contain"
+            />
           </div>
 
           {/* Desktop Navigation */}
