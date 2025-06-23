@@ -43,14 +43,12 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-3xl">
-              <img 
-                src="/lovable-uploads/9d4d7926-666d-4299-9493-df2a17047020.png" 
-                alt="Rutin biodegradable sanitary pads packaging - Strong Women, Clean Planet"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          <div className="relative flex justify-center">
+            <img 
+              src="/lovable-uploads/7a4c1089-d3f2-43cc-8a6c-f71500458a30.png" 
+              alt="Empowered woman illustration"
+              className="w-64 h-80 object-contain opacity-80"
+            />
           </div>
         </div>
       </div>
