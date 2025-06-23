@@ -12,8 +12,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/8c476577-501e-401e-93b2-b1f9856ee3ef.png" 
-              alt="Rutin - Confidence starts with comfort"
+              src="/lovable-uploads/73c4eab8-6cd9-4983-ae43-8a6a257b131e.png" 
+              alt="Rutin Logo"
               className="h-10 w-auto object-contain"
             />
           </div>
