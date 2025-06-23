@@ -7,31 +7,29 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/73c4eab8-6cd9-4983-ae43-8a6a257b131e.png" 
-              alt="Rutin Logo"
-              className="h-8 w-auto object-contain"
+              src="/lovable-uploads/8c476577-501e-401e-93b2-b1f9856ee3ef.png" 
+              alt="Rutin - Confidence starts with comfort"
+              className="h-10 w-auto object-contain"
             />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#products" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">
-              Products
+            <a href="#benefits" className="text-foreground hover:text-primary transition-colors">
+              Benefits
             </a>
-            <a href="#sustainability" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">
+            <a href="#sustainability" className="text-foreground hover:text-primary transition-colors">
               Sustainability
             </a>
-            <a href="#about" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">
+            <a href="#about" className="text-foreground hover:text-primary transition-colors">
               About
             </a>
-            <Button className="bg-pink-500 hover:bg-pink-600 text-white rounded-full px-6">
-              Shop Now
-            </Button>
+            <Button>Shop Now</Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -45,20 +43,18 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <a href="#products" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">
-                Products
+              <a href="#benefits" className="text-foreground hover:text-primary transition-colors">
+                Benefits
               </a>
-              <a href="#sustainability" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">
+              <a href="#sustainability" className="text-foreground hover:text-primary transition-colors">
                 Sustainability
               </a>
-              <a href="#about" className="text-gray-700 hover:text-pink-500 transition-colors font-medium">
+              <a href="#about" className="text-foreground hover:text-primary transition-colors">
                 About
               </a>
-              <Button className="w-full bg-pink-500 hover:bg-pink-600 text-white rounded-full">
-                Shop Now
-              </Button>
+              <Button className="w-full">Shop Now</Button>
             </nav>
           </div>
         )}
