@@ -1,7 +1,7 @@
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-export type MoodType = 'energetic' | 'calm' | 'emotional' | 'happy';
+export type MoodType = 'emotional' | 'angry' | 'joy' | 'wow';
 
 interface MoodContextType {
   currentMood: MoodType | null;
@@ -18,33 +18,33 @@ interface MoodConfig {
 }
 
 const moodConfigs: Record<MoodType, MoodConfig> = {
-  energetic: {
-    bgGradient: 'from-orange-50 to-yellow-50',
-    textColor: 'text-orange-600',
-    buttonColor: 'bg-orange-500 hover:bg-orange-600',
-    image: '/lovable-uploads/8df6f384-08d7-4d7f-9291-cf8ae33cc86f.png',
-    message: 'Feeling energetic? Our active comfort pads are perfect for your busy day!'
-  },
-  calm: {
-    bgGradient: 'from-blue-50 to-indigo-50',
-    textColor: 'text-blue-600',
-    buttonColor: 'bg-blue-500 hover:bg-blue-600',
-    image: '/lovable-uploads/e9f429d5-7e41-49e5-b86d-8ebb6623aa35.png',
-    message: 'Take a moment for yourself. Our gentle formula provides peaceful comfort.'
-  },
   emotional: {
     bgGradient: 'from-red-50 to-pink-50',
     textColor: 'text-red-500',
     buttonColor: 'bg-red-500 hover:bg-red-600',
-    image: '/lovable-uploads/7957a409-d5c2-4dfa-add3-9e91ae11e831.png',
-    message: 'We understand those tough days. Extra comfort when you need it most.'
+    image: '/lovable-uploads/d454777d-55bd-4c0e-9120-0de635fe9387.png',
+    message: 'We understand those emotional days. Extra comfort when you need it most.'
   },
-  happy: {
+  angry: {
+    bgGradient: 'from-orange-50 to-red-50',
+    textColor: 'text-orange-600',
+    buttonColor: 'bg-orange-500 hover:bg-orange-600',
+    image: '/lovable-uploads/b585835b-a259-48ef-b75d-ae13b5ebd0ef.png',
+    message: 'Feeling frustrated? Our reliable protection has your back during tough moments.'
+  },
+  joy: {
     bgGradient: 'from-pink-50 to-rose-50',
     textColor: 'text-pink-500',
     buttonColor: 'bg-pink-500 hover:bg-pink-600',
-    image: '/lovable-uploads/6aa1a515-34fe-4abb-a322-99f015701ef7.png',
-    message: 'Celebrating feeling great! Our products keep you confident all day.'
+    image: '/lovable-uploads/879ee869-60cc-4608-b78a-a2ccf80687ed.png',
+    message: 'Feeling great? Our products keep you confident and comfortable all day!'
+  },
+  wow: {
+    bgGradient: 'from-pink-50 to-purple-50',
+    textColor: 'text-pink-600',
+    buttonColor: 'bg-pink-600 hover:bg-pink-700',
+    image: '/lovable-uploads/84135151-2689-4cb8-801c-c1536329c5bf.png',
+    message: 'Amazing energy today! Let our premium products match your vibes.'
   }
 };
 
