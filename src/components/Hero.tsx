@@ -48,7 +48,6 @@ const Hero = () => {
               src="/lovable-uploads/7a4c1089-d3f2-43cc-8a6c-f71500458a30.png" 
               alt="Empowered woman illustration"
               className="w-64 h-80 object-contain opacity-80"
-              style={{ filter: 'hue-rotate(320deg) saturate(1.2) brightness(0.9)' }}
             />
           </div>
         </div>
