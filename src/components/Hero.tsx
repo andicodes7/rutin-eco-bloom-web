@@ -13,7 +13,7 @@ const Hero = () => {
                   <img 
                     src="/lovable-uploads/55a78285-3c89-4129-97eb-421f1f45fc9b.png" 
                     alt="R Logo"
-                    className="w-12 h-16 md:w-16 md:h-20 lg:w-20 lg:h-24 object-contain mr-2"
+                    className="w-12 h-16 md:w-16 md:h-20 lg:w-20 lg:h-24 object-contain mr-1"
                   />
                   edefining
                 </div>
