@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
 import MoodSelector from "@/components/MoodSelector";
 import Products from "@/components/Products";
-import Empowerment from "@/components/Empowerment";
 import Sustainability from "@/components/Sustainability";
 import Trust from "@/components/Trust";
 import CallToAction from "@/components/CallToAction";
@@ -18,7 +17,6 @@ const Index = () => {
       <Benefits />
       <MoodSelector />
       <Products />
-      <Empowerment />
       <Sustainability />
       <Trust />
       <CallToAction />
