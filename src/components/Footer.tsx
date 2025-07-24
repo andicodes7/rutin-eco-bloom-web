@@ -53,13 +53,10 @@ const Footer = () => {
           <p className="text-primary-foreground/80">
             © 2024 Rutin. All rights reserved.
           </p>
-          <div className="flex items-center gap-3 text-primary-foreground/80">
-            <img 
-              src="/lovable-uploads/27515060-e2ff-461c-834f-d53b51254f72.png" 
-              alt="Strong woman, clean planet"
-              className="w-8 h-8 object-contain"
-            />
-            <span>Strong woman, clean planet</span>
+          <div className="flex items-center gap-2 text-primary-foreground/80">
+            <span>Made with</span>
+            <Heart className="w-4 h-4 fill-current" />
+            <span>for women and the planet</span>
           </div>
         </div>
       </div>
