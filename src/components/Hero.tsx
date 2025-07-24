@@ -41,6 +41,24 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">Materials</div>
               </div>
             </div>
+
+            {/* Brand messaging logos */}
+            <div className="flex flex-col sm:flex-row gap-6 pt-8">
+              <div className="flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/797b858c-db0f-4d31-b13b-91b89bc6ec1d.png" 
+                  alt="Confidence starts with comfort"
+                  className="w-48 h-24 object-contain hover-scale animate-fade-in"
+                />
+              </div>
+              <div className="flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/7f758195-7fb3-434b-a5a9-5eed919203b3.png" 
+                  alt="Strong woman, clean planet"
+                  className="w-48 h-24 object-contain hover-scale animate-fade-in"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="relative flex justify-center items-center">
