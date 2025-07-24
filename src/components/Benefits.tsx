@@ -30,9 +30,16 @@ const Benefits = () => {
     <section id="benefits" className="py-16 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Choose Rutin?
-          </h2>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <img 
+              src="/lovable-uploads/2b94c035-198c-4b31-bc25-46c66fc28d45.png" 
+              alt="Confidence starts with comfort"
+              className="w-16 h-16 object-contain"
+            />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Why Choose Rutin?
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Experience the difference of truly natural feminine care that respects your body and the environment.
           </p>
