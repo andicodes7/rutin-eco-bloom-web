@@ -2,6 +2,12 @@
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="pt-24 pb-16 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -19,10 +25,10 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8 py-6">
+              <Button size="lg" className="text-lg px-8 py-6" onClick={() => scrollToSection('products')}>
                 Shop Now
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => scrollToSection('why-choose-rutin')}>
                 Learn More
               </Button>
             </div>
