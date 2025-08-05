@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-foreground/80">
-            © 2024 Rutin. All rights reserved.
+            © 2025 Rutin. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-primary-foreground/80">
             <span>Made with</span>

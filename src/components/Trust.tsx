@@ -45,7 +45,7 @@ const Trust = () => {
             <div className="flex items-center gap-4 mb-6">
               <div className="flex items-center gap-2">
                 <Users className="w-6 h-6 text-primary" />
-                <span className="text-2xl font-bold text-foreground">50,000+</span>
+                <span className="text-2xl font-bold text-foreground">5,000+</span>
               </div>
               <span className="text-muted-foreground">Happy Customers</span>
             </div>
@@ -86,7 +86,7 @@ const Trust = () => {
               <CardContent className="p-6 text-center">
                 <Award className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h4 className="text-lg font-bold text-foreground mb-2">
-                  Winner: Best Sustainable Product 2024
+                  Winner: Best Sustainable Product 2025
                 </h4>
                 <p className="text-muted-foreground">
                   Recognized by the Environmental Health Alliance for innovation in sustainable feminine care.
