@@ -1,5 +1,5 @@
 
-import { Heart, Mail, Instagram, Twitter } from "lucide-react";
+import { Heart, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,9 +12,14 @@ const Footer = () => {
               Redefining feminine hygiene with natural, biodegradable products that care for your body and the planet.
             </p>
             <div className="flex gap-4 justify-center">
-              <Instagram className="w-5 h-5 hover:text-primary-foreground/80 cursor-pointer" />
-              <Twitter className="w-5 h-5 hover:text-primary-foreground/80 cursor-pointer" />
-              <Mail className="w-5 h-5 hover:text-primary-foreground/80 cursor-pointer" />
+              <a 
+                href="https://www.linkedin.com/company/rutin-essentials/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary-foreground/80 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
