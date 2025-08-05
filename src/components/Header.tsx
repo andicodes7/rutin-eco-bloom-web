@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-4">
@@ -20,16 +27,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#benefits" className="text-foreground hover:text-primary transition-colors">
+            <button onClick={() => scrollToSection('why-choose-rutin')} className="text-foreground hover:text-primary transition-colors">
               Benefits
-            </a>
-            <a href="#sustainability" className="text-foreground hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection('sustainability')} className="text-foreground hover:text-primary transition-colors">
               Sustainability
-            </a>
+            </button>
             <a href="#about" className="text-foreground hover:text-primary transition-colors">
               About
             </a>
-            <Button>Shop Now</Button>
+            <Button onClick={() => scrollToSection('products')}>Shop Now</Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -45,16 +52,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <a href="#benefits" className="text-foreground hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection('why-choose-rutin')} className="text-foreground hover:text-primary transition-colors text-left">
                 Benefits
-              </a>
-              <a href="#sustainability" className="text-foreground hover:text-primary transition-colors">
+              </button>
+              <button onClick={() => scrollToSection('sustainability')} className="text-foreground hover:text-primary transition-colors text-left">
                 Sustainability
-              </a>
+              </button>
               <a href="#about" className="text-foreground hover:text-primary transition-colors">
                 About
               </a>
-              <Button className="w-full">Shop Now</Button>
+              <Button className="w-full" onClick={() => scrollToSection('products')}>Shop Now</Button>
             </nav>
           </div>
         )}
